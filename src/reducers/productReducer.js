@@ -1,4 +1,4 @@
-import {FETCH_REQUEST} from "../actions/types";
+import {FETCH_PRODUCTS, FETCH_REQUEST} from "../actions/types";
 
 const initialState = {
     products :[],
@@ -6,5 +6,20 @@ const initialState = {
 };
 
 export default function(state=initialState,action){
-    return state;
+    switch(action.type){
+        case FETCH_REQUEST:
+            return {
+                ...state,
+                isFetching: true
+            };
+        case FETCH_PRODUCTS:
+            return {
+                ...state,
+                products: action.payload,
+                isFetching:false
+            }
+        default:
+            return state;
+    }
+
 }
