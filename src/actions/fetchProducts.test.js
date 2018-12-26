@@ -12,7 +12,7 @@ describe('products data action', () => {
     it('should dispatch fetch on action for product data ',() => {
         const store = mockStore({products:[]})
 
-        fetchMock.getOnce('https://api.mercadolibre.com/sites/MLB/search?category=MLB1743&limit=20',{
+        fetchMock.getOnce('https://api.mercadolibre.com/sites/MLB/search?category=MLB1743&limit=21',{
             body:{results:[{title:'product1',price:2000}]},
             headers:{'content-type':'application/json'}
         })

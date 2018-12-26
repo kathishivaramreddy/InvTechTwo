@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.product{
+    float:left;
+    width:33%;
+    padding:5px;
+    border: 1px solid lightgrey;
+    margin:1px;
+    cursor: pointer;
+
+}
+
+.product:hover{
+    box-shadow: 2px 1px lightgrey;
+
+}
+.productlist{
+    margin:4px;
+}
+
+.productlist::after{
+    display:block;
+    clear:both;
+}
+img{
+    width:25%;
+}

@@ -7,9 +7,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
+            <h5>Mercadolibre</h5>
         </header>
 
-          <div>
+          <div className="main">
             <ProductListContainer/>
           </div>
       </div>

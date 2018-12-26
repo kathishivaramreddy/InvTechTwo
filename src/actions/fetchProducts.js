@@ -6,7 +6,7 @@ export const fetchProducts = () => disptach => {
         type:FETCH_REQUEST
     });
 
-    return fetch('https://api.mercadolibre.com/sites/MLB/search?category=MLB1743&limit=20')
+    return fetch('https://api.mercadolibre.com/sites/MLB/search?category=MLB1743&limit=21')
         .then( response => response.json())
         .then( products => {
 

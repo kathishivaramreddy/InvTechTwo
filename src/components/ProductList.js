@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ProductList.css'
 export class ProductList extends React.Component{
     render(){
 
@@ -11,7 +11,7 @@ export class ProductList extends React.Component{
             </div>
         )
         return(
-            <div className="productList">
+            <div className="productlist">
                 {products}
             </div>
         )
