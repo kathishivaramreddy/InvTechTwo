@@ -1,9 +1,15 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {fetchProducts} from "../actions/fetchProducts";
+import {ProductList} from '../components/ProductList'
 import './ProductListContainer.css'
 
 export class ProductListContainer extends React.Component {
+
+
+    componentDidMount() {
+        this.props.fetchProducts()
+    }
 
     render() {
         return (
@@ -14,6 +20,9 @@ export class ProductListContainer extends React.Component {
                     </div>
                 </div>}
 
+                <div>
+                    <ProductList products ={this.props.products.products}/>
+                </div>
             </div>
         )
     }
