@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProductListContainer from './container/ProductListContainer'
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
         </header>
 
           <div>
-
+            <ProductListContainer/>
           </div>
       </div>
     );

@@ -1,0 +1,27 @@
+.loading{
+    position:fixed;
+    top:0%;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20% 40%;
+}
+
+.page-loader{
+    border: 20px solid white;
+    border-radius: 50%;
+    border-top :10px solid red;
+    width:100px;
+    height:100px;
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    0%{
+        transfore:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
